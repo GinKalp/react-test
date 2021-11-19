@@ -1,9 +1,11 @@
 import React from 'react';
+import UsersTable from "./UsersTable";
 
 function Task6() {
   return (
     <div>
       <h3>Task 6</h3>
+        <UsersTable/>
     </div>
   );
 }
