@@ -1,0 +1,11 @@
+.flex-container{
+    display: flex;
+    gap: 1rem;
+    text-align: center;
+}
+.flex-container img{
+    width: 300px;
+}
+.title{
+    text-align: center;
+}
