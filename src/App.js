@@ -11,39 +11,54 @@ import Task7 from './exam-tasks/task-7/Task7';
 import Task8 from './exam-tasks/task-8/Task8';
 import Task9 from './exam-tasks/task-9/Task9';
 import Task10 from './exam-tasks/task-10/Task10';
+import {Route, Switch} from "react-router-dom";
+import Contacts from "./exam-tasks/task-1/Pages/Contacts";
+import AboutUs from "./exam-tasks/task-1/Pages/AboutUs";
 
 function App() {
   return (
     <div className='App'>
-      <Task1 />
-      <hr />
+        <Switch>
+                <Route path={'/contacts'}>
+                    <Contacts/>
+                </Route>
+                <Route path={'/about-us'}>
+                    <AboutUs/>
+                </Route>
+                <Route path={'/'}>
+                    <Task1 />
+                    <hr />
 
-      <Task2 />
-      <hr />
+                    <Task2 />
+                    <hr />
 
-      <Task3 />
-      <hr />
+                    <Task3 />
+                    <hr />
 
-      <Task4 />
-      <hr />
+                    <Task4 />
+                    <hr />
 
-      <Task5 />
-      <hr />
+                    <Task5 />
+                    <hr />
 
-      <Task6 />
-      <hr />
+                    <Task6 />
+                    <hr />
 
-      <Task7 />
-      <hr />
+                    <Task7 />
+                    <hr />
 
-      <Task8 />
-      <hr />
+                    <Task8 />
+                    <hr />
 
-      <Task9 />
-      <hr />
+                    <Task9 />
+                    <hr />
 
-      {/* <Task10 /> */}
-      {/* <hr /> */}
+                    {/* <Task10 /> */}
+                    {/* <hr /> */}
+                </Route>
+        </Switch>
+
+
     </div>
   );
 }

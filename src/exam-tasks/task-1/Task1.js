@@ -1,9 +1,16 @@
 import React from 'react';
+import {Link} from "react-router-dom";
 
 function Task1() {
   return (
     <div>
       <h3>Task 1</h3>
+        <Link to={'/contacts'}>
+            Contacts
+        </Link> <br/>
+        <Link to={'/about-us'}>
+            About Us
+        </Link>
     </div>
   );
 }
