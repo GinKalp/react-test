@@ -1,9 +1,21 @@
-import React from 'react';
+import React, {useRef} from 'react';
+import css from './Task7.module.css'
 
 function Task7() {
+  const divEl = useRef(null)
+  const lightTheme = () =>{
+    divEl.current.className = css.light
+  }
+  const darkTheme = () =>{
+    divEl.current.className = css.dark
+  }
   return (
-    <div>
+    <div ref={divEl}>
       <h3>Task 7</h3>
+        <h1>Tekstas</h1>
+        <p>Mazas tekstas</p>
+        <button onClick={lightTheme}>Light theme</button>
+        <button onClick={darkTheme}>Dark theme</button>
     </div>
   );
 }
