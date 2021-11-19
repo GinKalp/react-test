@@ -1,9 +1,11 @@
 import React from 'react';
+import LikeDislike from "./LikeDislike";
 
 function Task4() {
   return (
     <div>
       <h3>Task 4</h3>
+        <LikeDislike/>
     </div>
   );
 }
