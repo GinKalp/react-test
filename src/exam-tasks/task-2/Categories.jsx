@@ -7,7 +7,7 @@ import css from './Categories.module.css'
 
 function Categories() {
     return (
-        <div>
+        <div className={css['main-div']}>
             <h1 className={css.title}>CATEGORIES</h1>
             <div className={css['flex-container']}>
                 <div>
