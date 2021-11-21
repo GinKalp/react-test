@@ -7,5 +7,5 @@ Why couldn’t the React component understand the joke?
 Because it didn’t get the context.
 
 Jūsų paaiškinimas:
-
+Komponentas nesuprato pokšto, nes jam nebuvo paduotas kontekstas su useContext() hook'u kuriame arba su kurio pagalba tas pokštas yra gaunamas.
 */
