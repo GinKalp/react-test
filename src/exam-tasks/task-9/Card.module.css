@@ -1,3 +1,5 @@
 .completed{
     font-weight: bold;
+    float: right;
+    padding-right: 30px;
 }

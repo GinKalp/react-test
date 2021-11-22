@@ -1,4 +1,16 @@
 .d-flex{
     display: flex;
     gap: 1rem;
+    justify-content: center;
+}
+.para{
+    text-align: center;
+}
+.counter-container{
+    padding: 1rem;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 3px 4px 10px grey;
+    text-align: center;
+    display: inline-block;
 }

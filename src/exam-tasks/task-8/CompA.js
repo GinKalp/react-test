@@ -3,7 +3,7 @@ import CompA1 from './CompA1';
 
 function CompA() {
   return (
-    <div>
+    <div >
       <h4>CompA</h4>
       <CompA1 />
     </div>

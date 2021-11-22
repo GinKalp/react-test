@@ -1,4 +1,12 @@
-.wrapper{
-    display: flex;
-    gap: 1rem;
+.list{
+    list-style-type: none;
+    margin: 0 auto;
+    width: 50%;
+}
+.para{
+    margin: 5px;
+    margin-left: 40px;
+}
+.para strong{
+    float: right;
 }

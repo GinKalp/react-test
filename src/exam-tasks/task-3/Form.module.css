@@ -1,0 +1,20 @@
+.form{
+    margin: 0 auto;
+    width: 300px;
+    text-align: center;
+}
+.form input{
+    width: 100%;
+    margin: 2px auto;
+}
+.form button{
+    width: 50%;
+    height: 30px;
+    margin: 8px auto;
+}
+.message{
+    text-align: center;
+}
+.title{
+    text-align: center;
+}

@@ -13,9 +13,9 @@ export default class Task9 extends Component {
   componentDidMount() {
 
     (async ()=>{
-      console.log('works')
+      // console.log('works')
       const data = await this.getTodos()
-      console.log(data)
+      // console.log(data)
       this.setState({todos: data})
     })()
   }
@@ -31,9 +31,10 @@ export default class Task9 extends Component {
     return (
       <div>
         <h3>Task 9</h3>
-        <div className={css.wrapper}>
+        <ul className={css.list}>
+          <p className={css.para}>TODO <strong>Completed</strong></p><hr/>
           {this.state.todos.map(item => <Card title={item.title} completed={item.completed} id={item.id} key={item.id} />)}
-        </div>
+        </ul>
 
 
       </div>

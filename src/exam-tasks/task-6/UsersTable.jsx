@@ -16,7 +16,7 @@ function UsersTable(){
     async function getUsers(){
         const resp = await fetch(URL)
         const data = await resp.json()
-        console.log(data)
+        // console.log(data)
         return data
     }
     return (

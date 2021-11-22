@@ -19,8 +19,9 @@ function likesReducer(votes, action){
                 if (item.type === 'like' && item.isClicked === true) return {...item, count: item.count - 1,isClicked: false}
                 return item
             })
+        default:
+            return votes
     }
-
 }
 
 function LikeDislike(){
@@ -30,10 +31,14 @@ function LikeDislike(){
 
     useEffect(() =>{
         const likeObj = votes.find(item =>{
-            if (item.type === 'like') return item.count
+            if (item.type === 'like') return item
+            // added return false to remove warning
+            return false
         })
         const dislikeObj = votes.find(item =>{
-            if (item.type === 'dislike') return item.count
+            if (item.type === 'dislike') return item
+            // added return false to remove warning
+            return false
         })
         setLikeObj(likeObj)
         setDislikeObj(dislikeObj)
@@ -55,7 +60,6 @@ function LikeDislike(){
                 {dislikeObj.isClicked && <i onClick={onDislike} className="fa fa-thumbs-down" aria-hidden="true"/>}
                 {!dislikeObj.isClicked && <i onClick={onDislike} className="fa fa-thumbs-o-down" aria-hidden="true"/>}
                 {dislikeObj.count}</span>
-
         </div>
     )
 }

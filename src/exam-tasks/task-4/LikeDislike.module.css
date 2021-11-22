@@ -1,3 +1,8 @@
+.main-div{
+    margin: 10px auto;
+    margin-bottom: 30px;
+    width: 100px;
+}
 .main-div span{
     margin: 5px;
 }

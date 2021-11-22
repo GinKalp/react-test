@@ -4,18 +4,20 @@ import css from './Task7.module.css'
 function Task7() {
   const divEl = useRef(null)
   const lightTheme = () =>{
-    divEl.current.className = css.light
+    divEl.current.className = `${css.main} ${css.light}`
   }
   const darkTheme = () =>{
-    divEl.current.className = css.dark
+    divEl.current.className = `${css.main} ${css.dark}`
   }
   return (
-    <div ref={divEl}>
+    <div className={css.main} ref={divEl}>
       <h3>Task 7</h3>
+      <div className={css.wrapper}>
         <h1>Tekstas</h1>
         <p>Mazas tekstas</p>
         <button onClick={lightTheme}>Light theme</button>
         <button onClick={darkTheme}>Dark theme</button>
+      </div>
     </div>
   );
 }
