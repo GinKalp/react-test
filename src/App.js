@@ -10,7 +10,6 @@ import Task6 from './exam-tasks/task-6/Task6';
 import Task7 from './exam-tasks/task-7/Task7';
 import Task8 from './exam-tasks/task-8/Task8';
 import Task9 from './exam-tasks/task-9/Task9';
-import Task10 from './exam-tasks/task-10/Task10';
 import {Route, Switch} from "react-router-dom";
 import Contacts from "./exam-tasks/task-1/Pages/Contacts";
 import AboutUs from "./exam-tasks/task-1/Pages/AboutUs";
@@ -52,9 +51,7 @@ function App() {
 
                     <Task9 />
                     <hr />
-
-                    {/* <Task10 /> */}
-                    {/* <hr /> */}
+                    
                 </Route>
         </Switch>
 
